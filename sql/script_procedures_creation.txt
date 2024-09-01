@@ -1,0 +1,97 @@
+//Procedure Para inserir novo evento
+
+DELIMITER //
+
+CREATE PROCEDURE InsertEvent(
+    IN eventName VARCHAR(255),
+    IN eventDescription TEXT,
+    IN eventPrice DECIMAL(10, 2),
+    OUT statusMessage VARCHAR(255)
+)
+BEGIN
+    DECLARE EXIT HANDLER FOR SQLEXCEPTION
+    BEGIN
+        SET statusMessage = 'Erro ao inserir o evento.';
+        ROLLBACK;
+    END;
+
+    START TRANSACTION;
+
+    INSERT INTO event (name, description, price)
+    VALUES (eventName, eventDescription, eventPrice);
+
+    IF ROW_COUNT() > 0 THEN
+        SET statusMessage = 'Evento inserido com sucesso.';
+    ELSE
+        SET statusMessage = 'Falha ao inserir o evento.';
+    END IF;
+
+    COMMIT;
+END //
+
+DELIMITER ;
+
+
+//Procedure para Atualizar um evento
+
+DELIMITER //
+
+CREATE PROCEDURE UpdateEvent(
+	IN eventId INT,
+    IN eventName VARCHAR(255),
+    IN eventDescription TEXT,
+    IN eventPrice DECIMAL(10, 2),
+    OUT statusMessage VARCHAR(255)
+)
+BEGIN
+    DECLARE EXIT HANDLER FOR SQLEXCEPTION
+    BEGIN
+        SET statusMessage = 'Erro ao atualizar dados o evento.';
+        ROLLBACK;
+    END;
+
+    START TRANSACTION;
+
+    UPDATE event SET name = eventName, description = eventDescription, price = eventPrice WHERE id = eventId;
+
+    IF ROW_COUNT() > 0 THEN
+        SET statusMessage = 'Evento atualizado com sucesso.';
+    ELSE
+        SET statusMessage = 'Falha ao atualizar dados do evento.';
+    END IF;
+
+    COMMIT;
+END //
+
+DELIMITER ;
+
+
+//Procedure para excluir um evento
+
+DELIMITER //
+
+CREATE PROCEDURE DeleteteEvent(
+	IN eventId INT,
+    OUT statusMessage VARCHAR(255)
+)
+BEGIN
+    DECLARE EXIT HANDLER FOR SQLEXCEPTION
+    BEGIN
+        SET statusMessage = 'Erro ao excluir o evento.';
+        ROLLBACK;
+    END;
+
+    START TRANSACTION;
+
+    DELETE FROM event WHERE id = eventId;
+
+    IF ROW_COUNT() > 0 THEN
+        SET statusMessage = 'Evento excluido com sucesso.';
+    ELSE
+        SET statusMessage = 'Falha ao excluido dados do evento.';
+    END IF;
+
+    COMMIT;
+END //
+
+DELIMITER ;
