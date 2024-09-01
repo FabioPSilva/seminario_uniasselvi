@@ -1,0 +1,27 @@
+//Cria tabela de eventos (shows)
+CREATE TABLE event (
+	id INT AUTO_INCREMENT PRIMARY KEY,
+	name varchar(100) NULL,
+	description varchar(500) NULL,
+	price FLOAT NULL,
+)
+
+
+//Cria tabela de usuários
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL
+);
+
+
+//Cria tabela de tickets vendidos
+CREATE TABLE tickets_sold (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT NOT NULL,
+    event_name VARCHAR(255) NOT NULL,
+    purchase_date DATETIME NOT NULL,
+    price DECIMAL(10, 2) NOT NULL,
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+);
