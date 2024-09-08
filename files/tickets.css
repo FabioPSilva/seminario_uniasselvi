@@ -1,0 +1,6 @@
+/* Redefinindo estilos e tamanhos padrões na página para colocar responsividade depois */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
