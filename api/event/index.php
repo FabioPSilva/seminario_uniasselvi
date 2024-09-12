@@ -27,7 +27,7 @@ if($_SERVER['REQUEST_METHOD'] == 'GET'){
     exit;
 } 
 
-//Se o METHOD for post, salva ou atualiza os dados
+//Se o METHOD for post, salva ou atualiza os dados do evento
 if($_SERVER['REQUEST_METHOD'] == 'POST'){
 
     //Pega os dados do evento que foram recebidos via POST, e armazena em suas respectivas variaveis
