@@ -25,7 +25,6 @@ header {
     font-family: "Poppins", sans-serif;
     font-weight: 100%;
     position: relative;
-    z-index: 1;
 }
 
 /* BOX */
@@ -50,19 +49,20 @@ header {
     top: 0;
     left: 0;
     transform: rotate(30deg);
-    transform-origin: top left;
+    transform-origin: top right;
+    margin-right: 50px;
 }
 
 /* BOX - 3 */
 .box3 {
     background-color: rgb(127, 31, 218);
-    width: 100px;
-    height: 100px;
-    opacity: 40%;  
+    width: 130px;
+    height: 200px;  
     position: absolute;
     top: 0;
     left: 0;
     transform: rotate(30deg);
     transform-origin: top left;
+    margin-left: -50px;
 }
 
