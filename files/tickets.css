@@ -42,12 +42,12 @@ header {
 /* BOX - 2 */
 .box2 {
     background-color: rgb(155, 110, 197);
-    width: 100px;
+    width: 130px;
     height: 100px;
     opacity: 40%;  
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 9px;
+    left: 20px;
     transform: rotate(30deg);
     transform-origin: top right;
     margin-right: 50px;
