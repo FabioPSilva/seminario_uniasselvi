@@ -80,3 +80,12 @@ header {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
 }
+
+.Line {
+    width: 20%;
+    height: 1px;
+    background-color: #fff;
+    align-items: center;
+    margin-left: 40%;
+    margin-top: 2px;
+}
