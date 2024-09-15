@@ -73,3 +73,11 @@ header {
     z-index: -1;
 }
 
+/* Estilo na frase que indica pra escolher evento */
+.Choice_Event {
+    text-transform: uppercase;
+    font-size: 14px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: underline 1px;
+}
