@@ -56,13 +56,16 @@ header {
 /* BOX - 3 */
 .box3 {
     background-color: rgb(127, 31, 218);
-    width: 130px;
-    height: 200px;  
+    width: 150px;
+    height: 100px;  
     position: absolute;
+    opacity: 80%;
     top: 0;
     left: 0;
     transform: rotate(30deg);
     transform-origin: top left;
-    margin-left: -50px;
+    margin-left: -20px;
+    margin-top: 50px;
+    z-index: -1;
 }
 
