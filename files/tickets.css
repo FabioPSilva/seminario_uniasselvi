@@ -18,11 +18,13 @@ header {
 }
 
 /* Title da pagina */
-.titlePage {
+.titlePage {    
     font-size: 50px;
     text-align: center;
     padding-top: 15px;
     text-transform: uppercase;
     font-family: "Poppins", sans-serif;
     font-weight: 100%;
+    position: relative;
+    z-index: 1;
 }
