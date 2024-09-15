@@ -28,3 +28,11 @@ header {
     position: relative;
     z-index: 1;
 }
+
+/* BOX */
+.box {
+    background-color: rgb(77, 2, 148);
+    width: 100px;
+    height: 100px;
+    opacity: 40%;  
+}
