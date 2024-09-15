@@ -60,8 +60,8 @@ header {
     height: 100px;  
     position: absolute;
     opacity: 80%;
-    top: 0;
-    left: 0;
+    top: 5px;
+    left: 20px;
     transform: rotate(30deg);
     transform-origin: top left;
     margin-left: -20px;
