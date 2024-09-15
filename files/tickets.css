@@ -29,14 +29,17 @@ header {
 
 /* BOX */
 .box {
-    background-color: rgb(77, 2, 148);
-    width: 80px;
-    height: 80px;
+    background-color: rgb(83, 4, 156);
+    width: 100px;
+    height: 100px;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: -20px;
+    left: 5px;
     transform: rotate(30deg);
-    transform-origin: top left;  
+    transform-origin: top left;
+    margin-left: -10px;
+    opacity: 100%;  
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 /* BOX - 2 */
@@ -46,11 +49,12 @@ header {
     height: 100px;
     opacity: 40%;  
     position: absolute;
-    top: 9px;
+    top: 0px;
     left: 20px;
     transform: rotate(30deg);
     transform-origin: top right;
     margin-right: 50px;
+    z-index: -1;
 }
 
 /* BOX - 3 */
@@ -59,7 +63,7 @@ header {
     width: 150px;
     height: 100px;  
     position: absolute;
-    opacity: 80%;
+    opacity: 70%;
     top: 5px;
     left: 20px;
     transform: rotate(30deg);
