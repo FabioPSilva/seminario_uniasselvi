@@ -36,3 +36,20 @@ header {
     height: 100px;
     opacity: 40%;  
 }
+
+/* BOX - 2 */
+.box2 {
+    background-color: rgb(155, 110, 197);
+    width: 100px;
+    height: 100px;
+    opacity: 40%;  
+}
+
+/* BOX - 3 */
+.box3 {
+    background-color: rgb(127, 31, 218);
+    width: 100px;
+    height: 100px;
+    opacity: 40%;  
+}
+
