@@ -32,7 +32,7 @@ header {
 .box {
     background-color: rgb(77, 2, 148);
     width: 80px;
-    height: 90px;
+    height: 80px;
     position: absolute;
     top: 0;
     left: 0;
@@ -46,6 +46,11 @@ header {
     width: 100px;
     height: 100px;
     opacity: 40%;  
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(30deg);
+    transform-origin: top left;
 }
 
 /* BOX - 3 */
@@ -54,5 +59,10 @@ header {
     width: 100px;
     height: 100px;
     opacity: 40%;  
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(30deg);
+    transform-origin: top left;
 }
 
