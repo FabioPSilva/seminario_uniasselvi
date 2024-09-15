@@ -5,10 +5,88 @@
     padding: 0;
 }
 
+html {
+    background-color: black;
+    color: #fff;
+}
+
 /* Estilo no HEADER */
 header {
-    background-color: #333;
     width: 100%;
-    height: 300px;
+    height: 100px;
+}
+
+/* Title da pagina */
+.titlePage {    
+    font-size: 50px;
+    text-align: center;
+    padding-top: 15px;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    font-weight: 100%;
+    position: relative;
+}
+
+/* BOX */
+.box {
+    background-color: rgb(83, 4, 156);
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -20px;
+    left: 5px;
+    transform: rotate(30deg);
+    transform-origin: top left;
+    margin-left: -10px;
+    opacity: 100%;  
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* BOX - 2 */
+.box2 {
+    background-color: rgb(155, 110, 197);
+    width: 130px;
+    height: 100px;
+    opacity: 40%;  
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    transform: rotate(30deg);
+    transform-origin: top right;
+    margin-right: 50px;
+    z-index: -1;
+}
+
+/* BOX - 3 */
+.box3 {
+    background-color: rgb(127, 31, 218);
+    width: 150px;
+    height: 100px;  
+    position: absolute;
+    opacity: 70%;
+    top: 5px;
+    left: 20px;
+    transform: rotate(30deg);
+    transform-origin: top left;
+    margin-left: -20px;
+    margin-top: 50px;
+    z-index: -1;
+}
+
+
+/* Estilo na frase que indica pra escolher evento */
+.Choice_Event {
+    text-transform: uppercase;
+    font-size: 14px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.Line {
+    width: 20%;
+    height: 1px;
+    background-color: #fff;
     align-items: center;
+    margin-left: 40%;
+    margin-top: 2px;
 }
