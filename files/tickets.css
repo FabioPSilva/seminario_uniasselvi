@@ -73,6 +73,7 @@ header {
     z-index: -1;
 }
 
+
 /* Estilo na frase que indica pra escolher evento */
 .Choice_Event {
     text-transform: uppercase;
