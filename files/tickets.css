@@ -111,5 +111,46 @@ header {
 
 /* Estilo no - CARD DE SHOW */
 .Show_cards {
-    
+    width: 35%;
+    height: 55px;
+    text-transform: uppercase;
+    font-family: 'Anton', sans-serif;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 20px;
+    background-color: #fcfcfc;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.8s;
+}
+
+/* Estilo no texto do CARD */
+.Show_cards span {
+    font-size: 25px;
+    background-color: rgb(155, 110, 197);
+    display: block;
+    width: 90%;
+    height: 50px;
+    border-radius: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    margin-top: -10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5), 0 0 20px rgba(0, 0, 0, 0.8); 
+    transition: all 0.8s;
+}
+
+/* Estilizando assim que o mouse passar por cima */
+.Show_cards span:hover {
+    background-color: rgb(212, 191, 233);
+    color: #000000;
+    transition: all 0.8s;
+}
+
+.Show_cards:hover {
+    background-color: rgb(56, 13, 78);
+    transition: all 0.8s;
 }
