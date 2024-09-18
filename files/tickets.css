@@ -90,6 +90,14 @@ header {
     font-size: 14px;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
+    transition: all 0.8s;
+}
+
+/* Estilizando quando o mouse na frase */
+.Choice_Event:hover {
+    color: rgb(214, 218, 3);
+    font-size: 15px;
+    transition: all 0.8s;
 }
 
 .Line {
