@@ -6,8 +6,15 @@
 }
 
 html {
-    background-color: black;
+    background-color: #000;
     color: #fff;
+}
+
+a {
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: -60%;
+    margin-left: -15px;
 }
 
 /* Estilo no HEADER */
@@ -172,9 +179,12 @@ footer {
 /* From Uiverse.io by JkHuger */ 
 .sparkle-button {
     margin-top: 20px;
+    width: 250px;
+    height: 10vh;
     left: 42%;
     display: block;
     text-align: center;
+    justify-content: center;
     --active: 0;
     --bg: radial-gradient(
               40% 50% at center 100%,
