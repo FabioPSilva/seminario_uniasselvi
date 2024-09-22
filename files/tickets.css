@@ -10,6 +10,10 @@ html {
     color: #fff;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* Estilo no HEADER */
 header {
     width: 100%;
