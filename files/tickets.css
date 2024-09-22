@@ -96,7 +96,6 @@ header {
 /* Estilizando quando o mouse na frase */
 .Choice_Event:hover {
     color: rgb(214, 218, 3);
-    font-size: 15px;
     transition: all 0.8s;
 }
 
@@ -107,12 +106,18 @@ header {
     align-items: center;
     margin-left: 40%;
     margin-top: 2px;
+    transition: all 0.8s;
+}
+
+.line:hover { 
+    background-color: rgb(214, 218, 3);
+    transition: all 0.8s;
 }
 
 /* Estilo no - CARD DE SHOW */
 .Show_cards {
     width: 35%;
-    height: 55px;
+    height: 60px;
     text-transform: uppercase;
     font-family: 'Anton', sans-serif;
     text-align: center;
@@ -129,7 +134,7 @@ header {
 
 /* Estilo no texto do CARD */
 .Show_cards span {
-    font-size: 25px;
+    font-size: 20px;
     background-color: rgb(155, 110, 197);
     display: block;
     width: 90%;
@@ -148,6 +153,7 @@ header {
     background-color: rgb(212, 191, 233);
     color: #000000;
     transition: all 0.8s;
+    font-size: 22px;
 }
 
 .Show_cards:hover {
