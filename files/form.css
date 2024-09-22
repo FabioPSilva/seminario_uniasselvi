@@ -5,6 +5,11 @@
     padding: 0;
 }
 
+body {
+    background-color: #000;
+    color: #fff;
+}
+
 /* Estilo na parte do escopo do formulario */
 .container {
     width: 100%;
