@@ -162,9 +162,11 @@ header {
 }
 
 footer {
-    background-color: #fff;
-    width: 100%;
+    width: 0%;
     height: 0 auto;
+    margin-left: 43%;
+    background-color: #fcfcfc;
+
 }
 
 /* From Uiverse.io by JkHuger */ 
