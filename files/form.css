@@ -4,3 +4,9 @@
     margin: 0;
     padding: 0;
 }
+
+/* Estilo na parte do escopo do formulario */
+.container {
+    width: 100%;
+    height: 100vh;
+}
