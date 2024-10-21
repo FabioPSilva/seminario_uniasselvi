@@ -1,0 +1,139 @@
+/* Redefinindo estilos na pagina toda */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Estilo na parte do escopo do formulario */
+.container {
+    position:absolute;
+    z-index: 9999;
+    display:none;
+    top:0px;
+    width: 50%;
+    height: 90vh;
+    background-color: #5c0485;
+    color: #fff;
+    align-items: center;
+    margin: 2%;
+    margin-left: 25%;
+    padding: 50px;
+    border-radius: 20px;
+    border: 1px solid #fff;
+    box-shadow: 0px 0px 50px #4e4d4d;
+}
+
+/* Estilo no FORMULARIO */
+.formulario {
+    margin-top: 20px;    
+}
+
+/* Estilizando Parte de ganhar no NOME */
+.Full_name {
+    width: 100%;
+    height: 40vh;
+    text-transform: uppercase;
+    text-align: center;
+    margin-left: 33%;
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+/* Parte do preenchimento */
+#name {
+    width: 65%;
+    height: 7vh;
+    margin-top: 10px;
+    margin-left: 18%;
+    margin-bottom: 35px;
+    padding: 10px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    background-color: #2e2e2e;
+    color: #fff;
+}
+
+/* Estilizando Parte de ganhar no EMAIL */
+.email {
+    width: 100%;
+    height: 40vh;
+    text-transform: uppercase;
+    text-align: center;
+    margin-left: 40%;
+    margin-top: 10px;
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+/* Parte do preenchimento do EMAIL */
+#email {
+    width: 65%;
+    height: 7vh;
+    margin-top: 10px;
+    margin-left: 18%;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 10px;
+    background-color: #2e2e2e;
+    color: #fff;
+}
+
+/* Estilizando botao de envio */
+button {
+    padding: 20px 40px;
+    border-radius: 100px;
+    margin-left: 35%;
+    margin-top: 20px;
+    cursor: pointer;
+    border: 0;
+    background-color: white;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 10px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 12px;
+    transition: all 0.5s ease;
+  }
+  
+  button:hover {
+    letter-spacing: 3px;
+    background-color: hsl(261deg 80% 48%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
+  }
+  
+  button:active {
+    letter-spacing: 3px;
+    background-color: hsl(261deg 80% 48%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+    transform: translateY(10px);
+    transition: 100ms;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+.img-close {
+    height: 50px;
+    float:right;
+    margin-top:-20px;
+    cursor: pointer;
+}
+
+.msg-err{
+    color: red;
+    font-size: 18px;
+    margin-left: 18%;
+    margin-top: 10px;
+}
